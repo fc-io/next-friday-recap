@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .main {
   display: flex;
   flex-direction: column;
@@ -267,5 +269,11 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+.mobileColor {
+  @include mobile {
+    color: blue;
   }
 }
